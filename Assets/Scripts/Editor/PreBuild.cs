@@ -22,7 +22,7 @@ class PreBuildProcessor
         //EditorCoroutines.EditorCoroutines.StartCoroutine(DownloadFile(@"teapot.fbx"), this);
         DownloadFile(@"teapot.fbx");
 
-        AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+        AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
 
         //Debug.Log("Build Asset Bundles to " + path);
 
