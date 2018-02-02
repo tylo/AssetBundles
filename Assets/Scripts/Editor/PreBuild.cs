@@ -24,11 +24,11 @@ class PreBuildProcessor
 
         AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
 
-        Debug.Log("Build Asset Bundles to " + path);
+        //Debug.Log("Build Asset Bundles to " + path);
 
-        BuildPipeline.BuildAssetBundles(path,
-                                        BuildAssetBundleOptions.None,
-                                        target);
+        //BuildPipeline.BuildAssetBundles(path,
+        //                                BuildAssetBundleOptions.None,
+        //                                target);
 
         //string[] levels = new string[] { "Assets/main.unity" };
 
