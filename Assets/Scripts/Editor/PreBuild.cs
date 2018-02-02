@@ -51,9 +51,12 @@ class PreBuildProcessor
         
         while (!www.isDone) {  }
 
+        if (!string.IsNullOrEmpty(www.error))
+            Debug.Log(www.error);
+
         string newPath = saveLoc + "\\" + file;
 
-        Debug.Log("Saving file..." + newPath);
+        Debug.Log("Saving a " + www.bytes.Length + " bytes file..." + newPath);
 
         File.WriteAllBytes(newPath, www.bytes);
 

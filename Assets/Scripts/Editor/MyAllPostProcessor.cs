@@ -28,7 +28,7 @@ class MyAllPostprocessor : AssetPostprocessor
         //Object parentObject = PrefabUtility.FindPrefabRoot(go);
 
         //string assetPath = AssetDatabase.GetAssetPath(parentObject);
-        Debug.Log("path: " + assetPath);
+        Debug.Log("PostProcessModel: " + assetPath);
         AssetImporter.GetAtPath(assetPath).SetAssetBundleNameAndVariant("testBundle", "");
     }
 }
